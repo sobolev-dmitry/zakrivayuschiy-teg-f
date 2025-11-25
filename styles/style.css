@@ -11,6 +11,42 @@
 */
 
 .page {
+  display: flex;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-main), sans-serif;
+  font-variation-settings: 'wght' var(--font-weight-main), 410;
+  font-size: 18px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: var(--bg-image);
+  justify-content: center;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  inline-size: var(--page-width);
+  block-size: clamp(20.4375rem, 19.71rem + 3.66vw, 23rem);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 2px solid #000000;
+  margin-block: 100px;
+}
+.header_title {
+  font-family: var(--font-accent);
+  font-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.header_description {
+  font-family: var(--font-accent);
+  font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
 }
