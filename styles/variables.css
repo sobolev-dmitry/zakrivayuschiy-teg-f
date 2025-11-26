@@ -5,6 +5,8 @@
   --font-weight-main: 410;
   --card-title-font-weight: 715;
   --bg-color: #FFFFFF;
+  --color-main-text: #000000;
+  --color-text-stroke: #FFFFFF;
   --bg-image: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
@@ -12,5 +14,5 @@
     ),
     repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --page-width: clamp(23.4375rem, 17.63rem + 29.02vw, 43.75rem);
+  --page-width: clamp(18.75rem, 100%, 43.5rem);
 }
