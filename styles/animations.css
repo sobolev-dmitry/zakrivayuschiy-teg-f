@@ -9,3 +9,19 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.contour {
+  fill: var(--heart-contour);
+}
+
+.main-body {
+  fill: transparent;
+}
+
+.sparks {
+    fill: transparent;
+}
+
+
+
+
