@@ -16,5 +16,5 @@
     ),
     repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --page-width: clamp(18.75rem, 100%, 43.5rem);
+  --page-width: clamp(23.4375rem, 16.26rem + 30.61vw, 43.8125rem);
 }

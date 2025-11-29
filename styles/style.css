@@ -29,14 +29,13 @@
   display: flex;
   flex-direction: column;
   inline-size: var(--page-width);
-  /* block-size: clamp(20.4375rem, 19.71rem + 3.66vw, 23rem); */
-  min-block-size: 327px;
+  block-size: clamp(20.4375rem, 19.67rem + 3.84vw, 23.125rem);
   gap: 20px;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
   border: 2px solid #000000;
-  margin-block: 100px;
+  margin-top: 98px;
 }
 .header_title {
   font-family: var(--font-accent);
@@ -57,26 +56,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-block-start: 98px;
   gap: 50px;
-  margin-block-end: 50px;
+  /* margin-block-end: 50px; */
   inline-size: var(--page-width);
 }
 
 .card {
   background-color: var(--bg-color);
   border: 2px solid #000000;
+  
 }
 
 .card_title {
-  padding: 4px 10px;
+  padding: 3.5px 10px;
   font-family: inherit;
   font-size: inherit;
   font-weight: var(--card-title-font-weight);
   color: var(--color-main-text);
-  border-bottom: 2px solid #000000;
+  /* border-bottom: 2px solid #000000; */
+  
 }
 .card_decor {
   position: relative;
+  border-block: 2px solid #000000;
 }
 .card_label {
   font-family: var(--font-accent);
@@ -105,9 +108,9 @@
   display: flex;
   background-position: center;
   width: 100%;
-  /* min-block-size: 371px; */
+  max-block-size: 700px; */
   aspect-ratio: 1 / 1;
-  background-size: cover;
+  object-fit: cover;
 }
 .filter_contrast {
   filter: contrast(2);
@@ -126,19 +129,32 @@
 }
 
 .filter_saturate {
-  filter: saturate(280%);
+  filter: saturate(180%);
+}
+
+.filter_brightness {
+  filter: brightness(50%);
+}
+
+.filter_grayscale {
+  filter: grayscale(85%);
+}
+
+.filter_mix {
+  filter: saturate(280%) blur(2px);
 }
 
 .card_text {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
   gap: 25px;
-  padding: 25px; /*позже попробовать медиа 375 для ширины текста*/
+  padding: 25px 26px 0 25px;  /*позже попробовать медиа 375 для ширины текста*/
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
-  line-height: 117%;
-  border-top: 2px solid #000000;
+  line-height: 21px;
+  /* border-top: 2px solid #000000; */
   
 }
 
@@ -146,7 +162,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 0 25px 25px 0;
+  padding: 25px 25px 25px 0;
 }
 
 .button {
@@ -177,8 +193,7 @@
 }
 
 @media (width <= 376px) {
-  .card_text {
-    padding-right: 30px;
-    margin-top: -1px;
+  .card_title {
+  padding: 4px 10px;
   }
 }
