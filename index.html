@@ -500,6 +500,33 @@
           </button>
         </div>
       </article>
+      <div class="dialog_btns">
+      <button
+        class="button button_save"
+        type="button"
+        onclick="window['save_dialog'].showModal()"
+      >
+        <svg class="diskette" viewBox="0 0 21 21">
+          <use href="./svg/diskette.svg#diskette" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog class="dialog" id="save_dialog">
+        <div class="dialog_content">
+          <svg class="diskette" viewBox="0 0 21 21">
+            <use href="./svg/diskette.svg#diskette" />
+          </svg>
+          <p class="button__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          class="button button_dialog"
+          type="button"
+          onclick="window['save_dialog'].close()"
+        >
+          <span class="button__text">OK</span>
+        </button>
+      </dialog>
+      </div>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
