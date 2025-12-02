@@ -16,7 +16,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: "wght" var(--font-weight-main), 410;
+  font-variation-settings: "wght" var(--font-weight-text);
   font-size: 18px;
   background-attachment: fixed;
   background-size: cover;
@@ -72,7 +72,7 @@
   padding: 4px 10px;
   font-family: inherit;
   font-size: inherit;
-  font-weight: var(--card-title-font-weight);
+  font-variation-settings: "wght" var(--card-title-font-weight);
   color: var(--color-main-text);
 }
 
@@ -239,6 +239,7 @@
   z-index: 5;
   color: #ffffff;
   mix-blend-mode: difference;
+  text-transform: uppercase;
 }
 
 .dialog_btns {

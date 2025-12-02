@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font-main: "Inter-Variable", sans-serif;
-  --font-accent: "PressStart2P", "Courier New", monospace;
-  --font-weight-main: 410;
+  --font-accent: "PressStart2P", "Courier New", fantasy;
+  --font-weight-text: 410;
   --card-title-font-weight: 715;
   --bg-color: #ffffff;
   --color-main-text: #000000;
