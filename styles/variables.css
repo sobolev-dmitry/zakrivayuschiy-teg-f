@@ -4,11 +4,13 @@
   --font-accent: "PressStart2P", "Courier New", monospace;
   --font-weight-main: 410;
   --card-title-font-weight: 715;
-  --bg-color: #FFFFFF;
+  --bg-color: #ffffff;
   --color-main-text: #000000;
-  --color-text-stroke: #FFFFFF;
-  --sparks-color: #FF0000;
+  --color-text-stroke: #ffffff;
+  --heart-color: #ff0000;
+  --sparks-color: #ff0000;
   --heart-contour: #000000;
+  --сolor-border: #000000;
   --bg-image: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
@@ -16,5 +18,5 @@
     ),
     repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --page-width: clamp(23.4375rem, 16.26rem + 30.61vw, 43.8125rem);
+  --page-width: clamp(23.4375rem, 16.29rem + 30.52vw, 43.75rem);
 }
