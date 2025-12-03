@@ -239,7 +239,6 @@
   z-index: 5;
   color: #ffffff;
   mix-blend-mode: difference;
-  text-transform: uppercase;
 }
 
 .dialog_btns {
@@ -290,6 +289,7 @@
 
 .button_dialog {
   padding-block: 12.5px;
+  text-transform: uppercase;
 }
 
 dialog::backdrop {
